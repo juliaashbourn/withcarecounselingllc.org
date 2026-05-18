@@ -1,128 +1,189 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Care Counseling, LLC | Holistic Individual & Family Wellness Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #fcfbfa; color: #2e2c2a; font-family: 'Instrument Sans', sans-serif; overflow-x: hidden; }
+        .font-serif-warm { font-family: 'Fraunces', serif; }
+        .bg-soft-lavender { background-color: #f1edf7; }
+        .text-soft-purple { color: #5b4c73; }
+        .border-soft { border-color: rgba(91, 76, 115, 0.1); }
+        .reveal { transition: all 1.6s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(40px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #fcfbfa; }
+        ::-webkit-scrollbar-thumb { background: #d7cfe3; border-radius: 10px; }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <nav class="fixed w-full z-50 py-6 px-6 md:px-16 bg-[#fcfbfa]/70 backdrop-blur-md border-b border-stone-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-serif-warm text-xl font-semibold tracking-tight text-stone-800">
+                With Care <span class="font-light italic text-soft-purple">Counseling.</span>
+            </div>
+            <div class="hidden lg:flex space-x-12 text-[11px] font-medium tracking-[0.25em] uppercase text-stone-600">
+                <a href="#philosophy" class="hover:text-soft-purple transition">Philosophy</a>
+                <a href="#modalities" class="hover:text-soft-purple transition">Modalities</a>
+                <a href="#privacy" class="hover:text-soft-purple transition">Confidentiality</a>
+                <a href="#contact" class="bg-soft-lavender text-soft-purple px-6 py-2.5 rounded-full font-semibold hover:bg-[#e4dbe3] transition tracking-normal normal-case">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section class="min-h-screen flex items-center justify-center relative px-6 bg-gradient-to-b from-[#f7f4f0] to-[#fcfbfa]">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.pexels.com/photos/375883/pexels-photo-375883.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="w-full h-full object-cover filter sepia-[20%] brightness-105" alt="Calm Natural Lighting Window">
+        </div>
+        <div class="relative z-10 text-center max-w-4xl pt-20">
+            <span class="text-soft-purple font-medium tracking-[0.3em] text-xs uppercase mb-6 block">Individual & Family Support Services</span>
+            <h1 class="font-serif-warm text-5xl md:text-8xl font-light text-stone-900 leading-[1.1] mb-10 tracking-tight">
+                A space to breathe, <br><span class="italic text-soft-purple font-normal text-6xl md:text-8xl">and recalibrate.</span>
+            </h1>
+            <p class="text-stone-500 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light mb-12">
+                Providing compassionate care strategies and relational guidance based out of Portland, Oregon.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#modalities" class="bg-[#2e2c2a] text-white font-medium text-sm px-8 py-4 rounded-full hover:bg-soft-purple transition shadow-sm">Explore Support Channels</a>
+                <a href="tel:17076918991" class="text-stone-700 font-medium text-sm border border-stone-300 px-8 py-4 rounded-full hover:bg-stone-50 transition">+1 707-691-8991</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <section id="philosophy" class="py-44 px-6 md:px-12 bg-white">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-5 reveal">
+                <span class="text-soft-purple font-semibold tracking-widest text-xs uppercase block mb-4">// OUR ANCHOR</span>
+                <h2 class="font-serif-warm text-4xl md:text-5xl font-light text-stone-900 leading-tight mb-6">
+                    Nurturing emotional wellness with specialized clinical depth.
+                </h2>
+                <div class="w-12 h-[2px] bg-soft-purple my-6"></div>
+            </div>
+            <div class="lg:col-span-7 reveal">
+                <p class="text-stone-600 leading-loose text-base font-light mb-6">
+                    At With Care Counseling, LLC, we offer structured paths toward alignment, self-discovery, and sustainable family health. Under the direction of key principal Natalie Hahn, our system coordinates supportive environments that target anxiety barriers, personal recovery, and dynamic structural improvements within family units.
+                </p>
+                <p class="text-stone-500 leading-loose text-sm font-light">
+                    Located permanently at 2419 NW Johnson St, Portland, OR, we design therapy frameworks tailored for profound transitions.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <section id="modalities" class="py-44 px-6 md:px-12 bg-soft-lavender/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-28 text-center reveal">
+                <span class="text-soft-purple font-medium uppercase tracking-[0.3em] text-xs block mb-4">02 // CARE SPECTRUM</span>
+                <h2 class="font-serif-warm text-5xl font-light text-stone-900 tracking-tight">SUPPORTIVE SYSTEM CHANNELS</h2>
+            </div>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[30px] border border-stone-100 shadow-sm hover:shadow-md transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-2xl mb-8 h-56">
+                        <img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover opacity-90" alt="Individual Therapy Session Architecture">
+                    </div>
+                    <h3 class="font-serif-warm text-2xl text-stone-900 mb-4">Individual Counseling</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">One-on-one professional analysis dealing with stress, emotional burnout, personal trajectory alignment, and custom coping dynamics.</p>
+                </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+                <div class="bg-white p-10 rounded-[30px] border border-stone-100 shadow-sm hover:shadow-md transition duration-500 reveal md:translate-y-8">
+                    <div class="overflow-hidden rounded-2xl mb-8 h-56">
+                        <img src="https://images.pexels.com/photos/4100667/pexels-photo-4100667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover opacity-90" alt="Family Supportive Gathering">
+                    </div>
+                    <h3 class="font-serif-warm text-2xl text-stone-900 mb-4">Family Integration</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Restructuring communication patterns, balancing household transitions, and reinforcing fundamental interpersonal bonds within family models.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <div class="bg-white p-10 rounded-[30px] border border-stone-100 shadow-sm hover:shadow-md transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-2xl mb-8 h-56">
+                        <img src="https://images.pexels.com/photos/3764579/pexels-photo-3764579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover opacity-90" alt="Holistic Calming Space">
+                    </div>
+                    <h3 class="font-serif-warm text-2xl text-stone-900 mb-4">Mindfulness & Balance</h3>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Somatic methodologies and grounding modalities built to decrease physiological anxiety loops and establish clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="h-[70vh] relative overflow-hidden bg-stone-900">
+        <img src="https://images.pexels.com/photos/358532/pexels-photo-358532.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-luminosity" alt="Peaceful Lavender Field">
+        <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+            <div class="max-w-3xl reveal">
+                <h3 class="font-serif-warm text-3xl md:text-5xl text-white font-light italic leading-relaxed">
+                    "Healing is not a destination, but a deliberate restructuring of how we relate to ourselves."
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="py-44 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto bg-[#faf9f6] border border-stone-200/60 p-10 md:p-16 rounded-[40px] reveal">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 pb-6 border-b border-stone-200">
+                <div>
+                    <h2 class="font-serif-warm text-2xl font-semibold text-stone-900">Confidentiality Declaration</h2>
+                    <p class="text-stone-400 text-[10px] uppercase tracking-widest mt-1">Clinical Standard Records Protocol</p>
+                </div>
+                <div class="mt-4 sm:mt-0 text-[10px] font-bold text-soft-purple border border-soft px-4 py-1.5 rounded-full bg-soft-lavender/50">SECURE SHELF // ACTIVE</div>
+            </div>
+            <div class="h-56 overflow-y-scroll pr-4 text-xs tracking-wide leading-relaxed text-stone-500">
+                <p class="text-stone-800 font-semibold mb-4">REGULATION STRUCTURE ADJUSTMENT: MAY 18, 2026</p>
+                <p class="mb-4">With Care Counseling, LLC ("The Wellness Entity") applies strict data management parameters to maintain complete client record privacy within the administrative boundaries of the State of Oregon. Client protective safety remains foundational.</p>
+                
+                <h4 class="text-stone-900 font-semibold mt-6 mb-2">1. Communications Shielding</h4>
+                <p class="mb-4">All transmission records generated via digital routing mechanisms (contact@withcarecounselingllc.org) or standard telephonic registers (+1 707-691-8991) are locked into local cryptographic arrays. No affiliate sharing models or data harvesting methodologies are permitted.</p>
+                
+                <h4 class="text-stone-900 font-semibold mt-6 mb-2">2. Dynamic Case Protection</h4>
+                <p class="mb-4">Clinical progress journals, diagnostic layouts, and structural evaluation templates are protected behind segmented infrastructure layers completely disconnected from commercial advertising indexing algorithms.</p>
+                
+                <h4 class="text-stone-900 font-semibold mt-6 mb-2">3. Judicial Boundaries</h4>
+                <p>All legal specifications, contractual boundaries, and consultation services operate in direct alignment with local state guidelines in Portland, Oregon.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 px-6 md:px-12 bg-[#2e2c2a] text-stone-200">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="font-serif-warm text-5xl font-light mb-12 tracking-tight text-white">Begin your <br><span class="italic text-soft-lavender font-normal">reconstruction.</span></h2>
+                <div class="space-y-10">
+                    <div>
+                        <span class="text-stone-400 text-[10px] font-medium tracking-widest block mb-2 uppercase">Secure Intake Mailbox</span>
+                        <a href="mailto:contact@withcarecounselingllc.org" class="text-2xl font-light text-white hover:text-soft-lavender transition tracking-tight">contact@withcarecounselingllc.org</a>
+                    </div>
+                    <div>
+                        <span class="text-stone-400 text-[10px] font-medium tracking-widest block mb-2 uppercase">Clinical Telephone Link</span>
+                        <a href="tel:17076918991" class="text-2xl font-light text-white hover:text-soft-lavender transition tracking-tight">+1 707-691-8991</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end items-start lg:items-end">
+                <span class="text-stone-400 text-[10px] font-medium tracking-widest block mb-3 uppercase">Sanctuary Coordinates</span>
+                <p class="font-serif-warm text-2xl font-light leading-relaxed text-stone-300">
+                    2419 NW Johnson St<br>
+                    Portland, OR, 97210-3233<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-28 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between text-[10px] text-stone-500 uppercase tracking-widest font-medium">
+            <p>&copy; 2026 WITH CARE COUNSELING, LLC. CLINICAL SYSTEM FRAMEWORK SECURED.</p>
+            <p>JURISDICTION STANDARD: OREGON, USA</p>
+        </div>
+    </footer>
+
+    <script>
+        // High-Precision Soft Intersection Observer for Elegant Care Transitions
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
